@@ -1,0 +1,14 @@
+#!/bin/bash
+sudo su -
+yum update -y
+yum install httpd -y
+cd /var/www/html
+echo "hi am from webserver" > index.html
+ls
+service httpd start
+chkconfig httpd on
+
+
+
+
+
